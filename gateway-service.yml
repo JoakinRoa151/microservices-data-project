@@ -19,21 +19,21 @@ spring:
         - id: HU1-service
           uri: lb://HU1-service
           predicates:
-            - Path=/ingreso_salida
+            - Path=/ingreso_salida/**
         - id: HU2-service
           uri: lb://HU2-service
           predicates:
-            - Path=/inasistencia
+            - Path=/inasistencia/**
         - id: HU3-service
           uri: lb://HU3-service
           predicates:
             - Path=/autorizacion
-        - id: HU4-service
+        - id: HU4-service/**
           uri: lb://HU4-service
           predicates:
-            - Path=/sueldo
+            - Path=/sueldo/**
         - id: HU5-service
           uri: lb://HU5-service
           predicates:
-            - Path=/empleado
+            - Path=/empleado/**
         

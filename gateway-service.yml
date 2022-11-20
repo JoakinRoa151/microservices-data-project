@@ -27,8 +27,8 @@ spring:
         - id: HU3-service
           uri: lb://HU3-service
           predicates:
-            - Path=/autorizacion
-        - id: HU4-service/**
+            - Path=/autorizacion/**
+        - id: HU4-service
           uri: lb://HU4-service
           predicates:
             - Path=/sueldo/**

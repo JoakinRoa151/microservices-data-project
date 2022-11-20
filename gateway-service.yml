@@ -20,6 +20,10 @@ spring:
           uri: lb://HU1-service
           predicates:
             - Path=/ingreso_salida/**
+        - id: HU1-service
+          uri: lb://HU1-service
+          predicates:
+            - Path=/file/**
         - id: HU2-service
           uri: lb://HU2-service
           predicates:
